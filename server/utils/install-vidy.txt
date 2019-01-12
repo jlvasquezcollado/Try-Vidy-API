@@ -1,0 +1,14 @@
+
+<script src="https://unpkg.com/@vidy/embed/dist/embed.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@vidy/embed/dist/embed.css">
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
+		console.log('Page loaded');
+		let pathname = location.pathname;
+		let vidy = new Vidy({
+			appid: 'c0c3254a-62d9-4daa-918e-d2f5ab95e648',
+			postid: pathname,
+			autoload: true
+		});
+	});
+</script>
